@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42BF63DA2B3648EF008102CC /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 42BF63D92B3648EF008102CC /* SwiftUICharts */; };
 		8E046E6C29F6ECD4002FEE1D /* coredataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E046E6B29F6ECD4002FEE1D /* coredataApp.swift */; };
 		8E046E6E29F6ECD4002FEE1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E046E6D29F6ECD4002FEE1D /* ContentView.swift */; };
 		8E046E7029F6ECD6002FEE1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E046E6F29F6ECD6002FEE1D /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42BF63DA2B3648EF008102CC /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +166,9 @@
 			dependencies = (
 			);
 			name = BudgetBuddy;
+			packageProductDependencies = (
+				42BF63D92B3648EF008102CC /* SwiftUICharts */,
+			);
 			productName = coredata;
 			productReference = 8E046E6829F6ECD4002FEE1D /* BudgetBuddy.app */;
 			productType = "com.apple.product-type.application";
@@ -212,7 +217,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					8E046E6729F6ECD4002FEE1D = {
 						CreatedOnToolsVersion = 14.3;
@@ -236,6 +241,9 @@
 				Base,
 			);
 			mainGroup = 8E046E5F29F6ECD4002FEE1D;
+			packageReferences = (
+				42BF63D82B3648EF008102CC /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 8E046E6929F6ECD4002FEE1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -359,6 +367,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -419,6 +428,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -448,6 +458,8 @@
 				DEVELOPMENT_TEAM = 49T44D4V62;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BudgetBuddy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -477,6 +489,8 @@
 				DEVELOPMENT_TEAM = 49T44D4V62;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BudgetBuddy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -607,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42BF63D82B3648EF008102CC /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42BF63D92B3648EF008102CC /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42BF63D82B3648EF008102CC /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8E046E7629F6ECD6002FEE1D /* coredata.xcdatamodeld */ = {
